@@ -5,8 +5,8 @@ A spline is a curve that connects points in such a way that overall bending is m
 To plot a spline to given knots, use the plot_splinterpol function:
 
 ```
->> knots = [[0;0],[1;1],[3;-2],[6;4],[8;1],[9;-1],[10;0],[12;0]];
->> plot_splinterpol(knots);
+octave:1>> knots = [[0;0],[1;1],[3;-2],[6;4],[8;1],[9;-1],[10;0],[12;0]];
+octave:2>> plot_splinterpol(knots);
 ```
 
 A spline should be plotted, with points at the knots and all:
@@ -15,8 +15,8 @@ A spline should be plotted, with points at the knots and all:
 To call only the spline interpolation function:
 
 ```
->> knots = [[1;2], [2;3], [3;2], [4;1]];
->> splinterpol(knots)
+octave:3>> knots = [[1;2], [2;3], [3;2], [4;1]];
+octave:4>> splinterpol(knots)
 ans =
 
    2.00000   1.53333   0.00000  -0.53333
