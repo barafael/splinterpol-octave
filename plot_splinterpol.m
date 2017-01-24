@@ -1,5 +1,5 @@
 function plot_splinterpol (knots)
-    coefficients = splinterpol(knots)
+    coefficients = splinterpol(knots);
     x_s = knots(1, 1):0.05:knots(1, length(knots(1, :))) - 0.05;
     y_s = [];
     for i = 1:(length(knots) - 1)
