@@ -1,7 +1,17 @@
 # splinterpol
 Spline interpolation using octave
 
-call with:
+A spline is a curve that connects points in such a way that overall bending is minimal.
+To plot a spline to given knots, use the plot_splinterpol function:
+
+```
+>> knots = [[0;0],[1;1],[3;-2],[6;4],[8;1],[9;-1],[10;0],[12;0]]; % The spline will go through those points
+>> plot_splinterpol(knots);
+```
+
+A spline should be plotted, with knot points and all.
+
+To call only the spline interpolation function:
 
 ```
 >> knots = [[1;2], [2;3], [3;2], [4;1]];
